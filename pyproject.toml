@@ -7,8 +7,8 @@ build-backend = "setuptools.build_meta"
 [project]
 requires-python = ">=3.10"
 version = "0.1.0"
-name = "python-project-template"
-description = "A comprehensive project for learning and development."
+name = "window-dotfiles"
+description = "Efficiently manage your Windows folders with Git. This repository leverages WSL symbolic links to track and synchronize changes in key Windows directories like Downloads, Pictures, and Documents."
 authors = [{ name = "deitey719", email = "deity719@github.com" }]
 dependencies = ["pydantic", "PyYAML"]
 

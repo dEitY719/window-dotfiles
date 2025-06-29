@@ -434,48 +434,6 @@ wheels = [
 ]
 
 [[package]]
-name = "python-project-template"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "pydantic" },
-    { name = "pyyaml" },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "black" },
-    { name = "isort" },
-    { name = "mypy" },
-    { name = "pylint" },
-    { name = "pylint-exit" },
-    { name = "pytest" },
-    { name = "pytest-mock" },
-    { name = "tox" },
-    { name = "types-pyyaml" },
-    { name = "types-requests" },
-    { name = "types-toml" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "black", marker = "extra == 'dev'" },
-    { name = "isort", marker = "extra == 'dev'" },
-    { name = "mypy", marker = "extra == 'dev'" },
-    { name = "pydantic" },
-    { name = "pylint", marker = "extra == 'dev'" },
-    { name = "pylint-exit", marker = "extra == 'dev'" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "pytest-mock", marker = "extra == 'dev'" },
-    { name = "pyyaml" },
-    { name = "tox", marker = "extra == 'dev'" },
-    { name = "types-pyyaml", marker = "extra == 'dev'" },
-    { name = "types-requests", marker = "extra == 'dev'" },
-    { name = "types-toml", marker = "extra == 'dev'" },
-]
-provides-extras = ["dev"]
-
-[[package]]
 name = "pyyaml"
 version = "6.0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -662,3 +620,45 @@ sdist = { url = "https://files.pythonhosted.org/packages/56/2c/444f465fb2c65f40c
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f3/40/b1c265d4b2b62b58576588510fc4d1fe60a86319c8de99fd8e9fec617d2c/virtualenv-20.31.2-py3-none-any.whl", hash = "sha256:36efd0d9650ee985f0cad72065001e66d49a6f24eb44d98980f630686243cf11", size = 6057982, upload-time = "2025-05-08T17:58:21.15Z" },
 ]
+
+[[package]]
+name = "window-dotfiles"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "pydantic" },
+    { name = "pyyaml" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "black" },
+    { name = "isort" },
+    { name = "mypy" },
+    { name = "pylint" },
+    { name = "pylint-exit" },
+    { name = "pytest" },
+    { name = "pytest-mock" },
+    { name = "tox" },
+    { name = "types-pyyaml" },
+    { name = "types-requests" },
+    { name = "types-toml" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "black", marker = "extra == 'dev'" },
+    { name = "isort", marker = "extra == 'dev'" },
+    { name = "mypy", marker = "extra == 'dev'" },
+    { name = "pydantic" },
+    { name = "pylint", marker = "extra == 'dev'" },
+    { name = "pylint-exit", marker = "extra == 'dev'" },
+    { name = "pytest", marker = "extra == 'dev'" },
+    { name = "pytest-mock", marker = "extra == 'dev'" },
+    { name = "pyyaml" },
+    { name = "tox", marker = "extra == 'dev'" },
+    { name = "types-pyyaml", marker = "extra == 'dev'" },
+    { name = "types-requests", marker = "extra == 'dev'" },
+    { name = "types-toml", marker = "extra == 'dev'" },
+]
+provides-extras = ["dev"]
